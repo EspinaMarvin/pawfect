@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PAWFECT MATCH</string>
+    <string name="welcome_back">WELCOME BACK!</string>
+    <string name="lets_get_started">LET\'S GET STARTED!</string>
+    <string name="adopt_me">Adopt me!</string>
+    <string name="donation_msg">Your donation will directly support animal welfare, providing food, medical care, and shelter for stray cats and dogs in need.</string>
+</resources>
