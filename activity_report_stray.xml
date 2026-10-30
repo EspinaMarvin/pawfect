@@ -47,4 +47,52 @@
                 android:layout_marginBottom="20dp"/>
 
             <LinearLayout
-                android:layout_width="
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView android:text="Type of Animal" android:textStyle="bold" android:textColor="#333333"/>
+                <RadioGroup android:id="@+id/rgAnimalType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                    <RadioButton android:text="Dog" android:padding="4dp"/>
+                    <RadioButton android:text="Cat" android:padding="4dp"/>
+                    <RadioButton android:text="Unsure / Other" android:padding="4dp"/>
+                </RadioGroup>
+
+                <TextView android:text="Exact Location" android:textStyle="bold" android:textColor="#333333"/>
+                <EditText android:id="@+id/etStrayLocation" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Barangay, Street, Landmark, City" android:layout_marginBottom="12dp"/>
+
+                <TextView android:text="Description" android:textStyle="bold" android:textColor="#333333"/>
+                <EditText android:id="@+id/etStrayDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Color, size, condition, visible injuries, behavior" android:minLines="3" android:layout_marginBottom="12dp"/>
+
+                <TextView android:text="Your Contact Number" android:textStyle="bold" android:textColor="#333333"/>
+                <EditText android:id="@+id/etReporterPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="09XX-XXX-XXXX" android:inputType="phone" android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnSubmitReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="#89A482"
+                    android:text="Submit Report"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FOOTER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C7057"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2026 PAWFECT MATCH"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
