@@ -137,4 +137,46 @@
             <!-- Cat 2 -->
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
                 <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_cat2"/>
-                <TextView android:text="
+                <TextView android:text="Luna" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 1.5 yrs" android:textSize="12sp"/>
+                <TextView android:text="Found: Santa Rosa" android:textSize="12sp"/>
+            </LinearLayout>
+            <!-- Cat 3 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_cat3"/>
+                <TextView android:text="Mochi" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 3 yrs" android:textSize="12sp"/>
+                <TextView android:text="Found: Dasmariñas" android:textSize="12sp"/>
+            </LinearLayout>
+            <!-- Cat 4 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_cat4"/>
+                <TextView android:text="Bella" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 2.5 yrs" android:textSize="12sp"/>
+                <TextView android:text="Found: Imus" android:textSize="12sp"/>
+            </LinearLayout>
+            <!-- Cat 5 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_cat5"/>
+                <TextView android:text="Simba" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 1 yr" android:textSize="12sp"/>
+                <TextView android:text="Found: Bacoor" android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FOOTER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5C7057"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2026 PAWFECT MATCH"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
