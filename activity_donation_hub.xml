@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1EDD3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER WITH LOGO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C7057"
+            android:gravity="center"
+            android:padding="12dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_pawfect"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💚 Donation Hub"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- BODY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your donation will go directly to Animal Welfare — providing food, shelter, medical care, and essential supplies for stray cats and dogs waiting for their forever homes. Every contribution, big or small, makes a life-changing difference."
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:gravity="center"
+                android:padding="14dp"
+                android:background="#ACC5A6"
+                android:textColor="#333333"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- MONETARY DONATION -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp">
+                <TextView android:text="💰 Send Monetary Donation" android:textStyle="bold" android:textSize="16sp" android:textColor="#5C7057" android:layout_marginBottom="12dp"/>
+
+                <TextView android:text="Amount (PHP)" android:textStyle="bold" android:textColor="#333333"/>
+                <EditText android:id="@+id/etDonationAmount" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g. 500" android:inputType="numberDecimal" android:layout_marginBottom="12dp"/>
+
+                <TextView android:text="Payment Method" android:textStyle="bold" android:textColor="#333333"/>
+                <RadioGroup android:id="@+id/rgPayment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                    <RadioButton android:text="GCash" android:padding="4dp"/>
+                    <RadioButton android:text="Bank Transfer" android:padding="4dp"/>
+                    <RadioButton android:text="Cash Drop-off" android:padding="4dp"/>
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnSendDonation"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#89A482"
+                    android:text="Proceed to Donate"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- SUPPLY DONATION -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView android:text="📦 Donate Supplies" android:textStyle="bold" android:textSize="16sp" android:textColor="#5C7057" android:layout_marginBottom="12dp"/>
+
+                <TextView android:text="Item to Donate" android:textStyle="bold" android:textColor="#333333"/>
+                <EditText android:id="@+id/etItemName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g. Dog food, blankets, medicine" android:layout_marginBottom="12dp"/>
+
+                <TextView android:text="Quantity" android:textStyle="bold" android:textColor="#333333"/>
+                <EditText android:id="@+id/etQuantity" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g. 2 sacks / 5 pieces" android:layout_marginBottom="12dp"/>
+
+                <TextView android:text="Preferred Drop-off or Delivery Location" android:textStyle="bold" android:textColor="#333333"/>
+                <EditText android:id="@+id/etDropoff" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="San Pedro, Laguna shelter address" android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnSubmitSupply"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#89A482"
+                    android:text="Submit Supply Donation"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FOOTER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C7057"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2026 PAWFECT MATCH"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
