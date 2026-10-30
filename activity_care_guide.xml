@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1EDD3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER WITH LOGO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C7057"
+            android:gravity="center"
+            android:padding="12dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_pawfect"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🐾 Pet Care Guide"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- BODY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Essential Tips for Responsible Ownership"
+                android:textColor="#5C7057"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- FEEDING -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+                <TextView android:text="🍽️ Feeding" android:textStyle="bold" android:textSize="15sp" android:textColor="#5C7057" android:layout_marginBottom="6dp"/>
+                <TextView android:text="Provide nutritious, age-appropriate food. Keep fresh water available at all times. Follow regular feeding schedules and avoid giving harmful foods like chocolate, onions, or grapes." android:textSize="14sp" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+
+            <!-- HEALTH -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+                <TextView android:text="💉 Health & Vaccination" android:textStyle="bold" android:textSize="15sp" android:textColor="#5C7057" android:layout_marginBottom="6dp"/>
+                <TextView android:text="Visit the vet regularly. Keep vaccines, deworming, and anti-tick/flea treatments up to date. Spay or neuter your pet to help control the stray animal population." android:textSize="14sp" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+
+            <!-- GROOMING -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+                <TextView android:text="🧹 Grooming" android:textStyle="bold" android:textSize="15sp" android:textColor="#5C7057" android:layout_marginBottom="6dp"/>
+                <TextView android:text="Brush coats regularly, trim nails, and clean ears. Bathe pets as needed — not too often, which can dry out their skin." android:textSize="14sp" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+
+            <!-- TRAINING & LOVE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+                <TextView android:text="❤️ Training & Care" android:textStyle="bold" android:textSize="15sp" android:textColor="#5C7057" android:layout_marginBottom="6dp"/>
+                <TextView android:text="Use positive reinforcement — treats, praise, and patience. Spend quality time playing and bonding. Make your pet feel safe, loved, and truly part of the family." android:textSize="14sp" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+
+            <!-- RESPONSIBILITY -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ACC5A6"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView android:text="🤝 Why Adopt a Stray?" android:textStyle="bold" android:textSize="15sp" android:textColor="#333333" android:layout_marginBottom="6dp"/>
+                <TextView android:text="You give a second chance to a life in need. Stray pets often become deeply loyal and grateful companions. You also help reduce overpopulation and give other strays hope for rescue." android:textSize="14sp" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- FOOTER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C7057"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2026 PAWFECT MATCH"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
