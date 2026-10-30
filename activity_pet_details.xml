@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1EDD3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER WITH LOGO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C7057"
+            android:gravity="center"
+            android:padding="12dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_pawfect"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- BODY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/ivPetPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/pet_dog1"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvPetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buster"
+                android:textColor="#5C7057"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPetAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 years old • Male • Mixed Breed"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📖 Their Story"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#5C7057"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tvPetStory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buster was found wandering the streets of San Pedro, hungry and scared. He is gentle, loves walks, gets along well with other dogs, and is fully vaccinated. He has been waiting for his forever home for 4 months and dreams of a family who will love him forever."
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnAdoptMe"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#89A482"
+                android:text="Adopt me!"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- FOOTER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C7057"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="© 2026 PAWFECT MATCH"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
