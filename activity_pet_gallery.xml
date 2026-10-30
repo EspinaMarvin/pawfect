@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1EDD3"
+    android:orientation="vertical">
+
+    <!-- HEADER WITH LOGO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5C7057"
+        android:gravity="center"
+        android:padding="12dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo_pawfect"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐾 Pet Gallery"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- SEARCH BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="#FFFFFF">
+        <EditText
+            android:id="@+id/etSearchPet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search cats or dogs..."
+            android:padding="10dp"
+            android:background="#F0F0F0"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔍"
+            android:background="#ACC5A6"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- BODY: TWO COLUMNS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- DOGS COLUMN -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🐶 Dogs"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:background="#ACC5A6"/>
+
+            <!-- Dog 1 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_dog1"/>
+                <TextView android:text="Buster" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 3 yrs" android:textSize="12sp"/>
+                <TextView android:text="Found: San Pedro" android:textSize="12sp"/>
+            </LinearLayout>
+            <!-- Dog 2 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_dog2"/>
+                <TextView android:text="Max" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 4 yrs" android:textSize="12sp"/>
+                <TextView android:text="Found: Biñan" android:textSize="12sp"/>
+            </LinearLayout>
+            <!-- Dog 3 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_dog3"/>
+                <TextView android:text="Buddy" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 2 yrs" android:textSize="12sp"/>
+                <TextView android:text="Found: Calamba" android:textSize="12sp"/>
+            </LinearLayout>
+            <!-- Dog 4 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_dog4"/>
+                <TextView android:text="Rocky" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 5 yrs" android:textSize="12sp"/>
+                <TextView android:text="Found: Santa Rosa" android:textSize="12sp"/>
+            </LinearLayout>
+            <!-- Dog 5 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_dog5"/>
+                <TextView android:text="Charlie" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 1 yr" android:textSize="12sp"/>
+                <TextView android:text="Found: San Pablo" android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- CATS COLUMN -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🐱 Cats"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:background="#ACC5A6"/>
+
+            <!-- Cat 1 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_cat1"/>
+                <TextView android:text="Whiskers" android:textStyle="bold" android:layout_marginTop="4dp"/>
+                <TextView android:text="Age: 2 yrs" android:textSize="12sp"/>
+                <TextView android:text="Found: Calamba" android:textSize="12sp"/>
+            </LinearLayout>
+            <!-- Cat 2 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:background="#FFFFFF" android:orientation="vertical" android:padding="8dp" android:clickable="true" android:focusable="true">
+                <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:src="@drawable/pet_cat2"/>
+                <TextView android:text="
